@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+.navbar{
+    height:60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;/*Elements (multiple divs , would be placed at the center with respect to the cross axis (vertical axis)*/
+    justify-content: space-evenly;
+}
+/*In order to show the logo we have to give a height and width to the logo*/
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    background-image: url("./amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+.border{
+    border: 1px solid transparent;
+}
+.border:hover{
+    border: 1px solid white;
+}
+
+/*Box 2*/
+.add-first{
+    color:#cccccc;
+    font-size: 0.84rem; /*size is given in terms of rem so that the website becomes responsive, size of the text decreases as our website window size decreases*/
+    margin-left: 15px;
+}
+.add-second{
+    font-size: 1rem; /*as color is not given here , it takes the default color that is white, color: white (property of navbar)*/
+    margin-left: 3px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+/*Box 3*/
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width:620px;
+    height: 40px;
+    border-radius: 5px;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align:center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border:none;
+}
+.search-input{
+    width:100%;
+    font-size: 1rem;
+    border:none;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center; /*centered with respect to the horizontal axis*/
+    align-items: center; /*centered with respect to the vertical axis*/
+    font-size: 1.2rem;
+    background-color: rgb(188, 152, 42);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #0f1111;
+}
+
+.nav-search:hover{
+    border: 1px solid orange;
+}
+/*box 4*/
+
+span{
+    font-size: 0.7rem;
+}
+
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+.nav-cart{
+    font-size:0.85rem;
+    display: flex;  
+}
+.nav-cart i{
+    font-size:30px;
+    font-weight: 700;
+}
